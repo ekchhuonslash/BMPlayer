@@ -522,6 +522,7 @@ open class BMPlayerControlView: UIView {
         backButton.tag = BMPlayerControlView.ButtonType.back.rawValue
         backButton.setImage(BMImageResourcePath("Pod_Asset_BMPlayer_back"), for: .normal)
         backButton.addTarget(self, action: #selector(onButtonPressed(_:)), for: .touchUpInside)
+        backButton.alpha = 0
         
         titleLabel.textColor = UIColor.white
         titleLabel.text      = ""
