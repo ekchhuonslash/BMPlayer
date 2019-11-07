@@ -266,6 +266,7 @@ open class BMPlayerControlView: UIView {
      */
     open func updateUI(_ isForFullScreen: Bool) {
         isFullscreen = isForFullScreen
+        fullscreenButton.isHidden = true
         fullscreenButton.isSelected = isForFullScreen
         chooseDefinitionView.isHidden = !BMPlayerConf.enableChooseDefinition || !isForFullScreen
         if isForFullScreen {
